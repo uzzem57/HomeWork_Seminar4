@@ -18,6 +18,11 @@ public class StudentController implements UserController<Student>{
 
     @Override
     public void create(String firstName, String secondName, String patronymic, String dateOfBirth) {
+
+    }
+
+    @Override
+    public void create(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
         dataService.create(firstName, secondName, patronymic, dateOfBirth);
         studentView.sendOnConsole(dataService.getAll());
     }

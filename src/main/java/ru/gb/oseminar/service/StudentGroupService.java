@@ -27,7 +27,7 @@ public class StudentGroupService {
         while (iterator.hasNext()){
             Student student = iterator.next();
             if(student.getFirstName().equalsIgnoreCase(firstName)
-               && student.getSecondName().equalsIgnoreCase(secondName)){
+                    && student.getSecondName().equalsIgnoreCase(secondName)){
                 result.add(student);
             }
         }
